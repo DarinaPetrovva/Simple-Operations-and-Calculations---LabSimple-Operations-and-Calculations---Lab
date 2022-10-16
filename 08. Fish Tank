@@ -1,0 +1,19 @@
+using System;
+
+namespace zad5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double d = double.Parse(Console.ReadLine());
+            double s = double.Parse(Console.ReadLine());
+            double v = double.Parse(Console.ReadLine());
+            double pr = double.Parse(Console.ReadLine());
+            double obem = (d * s * v) * 0.001;
+            double pr1 = pr * 0.01;
+            double krl = obem * (1 - pr1);
+            Console.WriteLine($"{krl:f3}");
+        }
+    }
+}
