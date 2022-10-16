@@ -1,18 +1,15 @@
 using System;
 
-namespace ConsoleApp1
+namespace zad2
 {
     class Program
     {
         static void Main(string[] args)
         {
             string name = Console.ReadLine();
-            string surname = Console.ReadLine();
-            int age = int.Parse(Console.ReadLine());
-            string town = Console.ReadLine();
-            Console.WriteLine($"You are {name} {surname}, a {age}-year old person , from {town}. ");
-
-            
+            int br = int.Parse(Console.ReadLine());
+            int h = br * 3;
+            Console.WriteLine("The architect "+ name + " will need " + h +" hours to complete " + br + " project/s." );
         }
     }
 }
