@@ -1,0 +1,15 @@
+using System;
+
+namespace zad3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double brk = double.Parse(Console.ReadLine());
+            double brost = double.Parse(Console.ReadLine());
+            double sum = brk * 2.50 + brost * 4;
+            Console.WriteLine($"{sum:f2}" + " lv.");
+        }
+    }
+}
