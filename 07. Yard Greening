@@ -1,0 +1,17 @@
+using System;
+
+namespace zad4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double kvm = double.Parse(Console.ReadLine());
+            double p = kvm * 7.61;
+            double ostupka = p * 0.18;
+            double krpr = p - ostupka;
+            Console.WriteLine("The final price is: " + $"{krpr:f2} " + "lv.");
+            Console.WriteLine("The discount is: " + $"{ostupka:f2} " + "lv.");
+        }
+    }
+}
